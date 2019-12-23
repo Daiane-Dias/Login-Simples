@@ -1,0 +1,28 @@
+/*
+ * SISTEMA SIMPLES DE LOGIN
+ */
+package login.de.usuario;
+import java.util.Scanner;
+/**
+ *
+ * @author Daiane Dias
+ */
+public class LoginSimples
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("login>");
+        String login = in.nextLine();
+        
+        System.out.println("senha>");
+        String senha = in.nextLine();
+        if(login.equals("teste") && senha.equals("123")){
+            System.out.printf("Usuario logado com sucesso."+login);
+        }else{
+            System.out.println("Login e senha invalidos.");
+        }
+    }
+    
+}
